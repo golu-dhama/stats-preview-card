@@ -1,0 +1,120 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #0a0c1b;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  max-width: 900px;
+  width: 100%;
+  background-color: #1c1938;
+
+  border-radius: 12px;
+  overflow: hidden;
+
+  display: flex;
+}
+
+.info{
+  flex: 1;
+  padding: 30px;
+}
+
+.container h2{
+  color: white;
+  margin-top: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container .pink{
+  color: #aa67d2;
+}
+
+.text-area{
+  max-width: 350px;
+}
+
+.desc{
+  color: #aca9c2;
+  line-height: 1.4;
+}
+.desc p{
+    margin: 0;
+}
+.buttom{
+  display: flex;
+  gap: 60px;
+  margin-top: 30px;
+}
+
+.buttom p{
+  color: white;
+  margin: 0;
+}
+
+.buttom span{
+  color: #aca9c2;
+  font-size: 12px;
+}
+
+.image{
+    position: relative;
+  flex: 1;
+}
+.image::before{
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+  background: rgba(170, 103, 210, 0.55);
+}
+
+
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px){
+  body{
+    padding: 25px;
+  }
+
+  .container{
+    flex-direction: column-reverse; /* image top */
+    max-width: 380px;
+    width: 100%;
+  }
+
+  .info{
+    text-align: center;
+    padding: 35px 25px;
+  }
+
+  .text-area{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .buttom{
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .image img{
+    height: 240px;
+  }
+}
+
