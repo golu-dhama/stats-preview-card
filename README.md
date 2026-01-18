@@ -15,7 +15,7 @@ https://golu-dhama.github.io/stats-preview-card/
   ![Desktop Preview](./images/preview.jpg)
 
 - Mobile Preview  
-  ![Mobile Preview](./images/mobile-preview.jpg)
+  ![Mobile Preview](./mobile-preview.jpg)
 
 ---
 
